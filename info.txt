@@ -1,0 +1,19 @@
+bash course: 3:27
+first we take the name from user
+then we build the find_command
+and evaluate it if it is empty it echos not found twice
+if not it calls the function to display filter options and store the current selection
+the function display_filter_options ensures the selections is withing the list
+then the program checks if the arguments are not repeated
+then we build the find command and evaluate it and display the options
+
+
+we want first take the name from user
+then we build the initial find command to search with name
+then we make a function evaluate that takes the find_command and evaluates it
+then we search and display the found files if found and if not it runs the script again to search for a new file
+if files were found it calls the display_filter_options and takes the selected filteres
+the display_filter_options calls the options function to build the find_command
+then the search function recursively calls itself again to evaluate the new find command after applying the filters
+if there is more than one file you can apply search filters again to narrow the search results but if there is only one you can call 
+the function file manipulation to manipulate the files
