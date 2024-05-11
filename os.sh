@@ -1,15 +1,11 @@
 #!/bin/bash
 file_name="os.sh"
 
-read -p "Enter the name of the file: " name
-
-# # we use the find command with the case igonre name option -iname to search for the file in the specified diretory and its subdirectories
-find_command="find ./files -iname \"$name*\""
-
 
 declare -a current_selection
 declare -a visited
-## write a function to display the filter options and take the input and filters the input and store the unique selected_options
+## write a function to display the filter options and take 
+## the input and filters the input and store the unique selected_options
 display_filter_options () {
     echo "Filter by:"
     echo "-----------"
@@ -118,7 +114,12 @@ manipulation() {
 search () {
     result=$(eval "$find_command")
     if [ -z "$result" ]; then
+        echo "==============="
+        echo "Matching files:"
+        echo "============================================"
         echo "File not found!"
+
+        ## executing the script again to search for new files
         ./$file_name
     else
         echo "==============="
@@ -137,20 +138,29 @@ search () {
             (( len++ ))
         done
         echo "============================================"
-        # display_filter_options
+        ## checks if only one file left of more than one
         if [ $len -eq 1 ]; then
+            ## if only one is left it calls the manipulations function to open or rename or delete file
             manipulation
         else
+            ## if more than one is found it calls the display_filter_options
             display_filter_options
+            ## then calls the serach functions to narrow serach results
+            ## repeats this step until there is only one result left
             search
         fi
     fi
-
 }
 
 
 ## The program starts here
-search
+read -p "Enter the name of the file: " name
 
+## we use the find command with the case igonre name option -iname 
+## to search for the file in the specified diretory and its subdirectories
+find_command="find ./files -iname \"$name*\""
+
+## then we search with the file name
+search
 
 ./$file_name
