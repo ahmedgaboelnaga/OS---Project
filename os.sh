@@ -1,7 +1,6 @@
 #!/bin/bash
 file_name="os.sh"
 
-
 declare -a current_selection
 declare -a visited
 ## write a function to display the filter options and take 
@@ -112,7 +111,10 @@ manipulation() {
 
 ## a functions that takes the find_command as argument and then searchs for the file
 search () {
+    ## evaluates the find command
     result=$(eval "$find_command")
+
+    ## checks if the length of results is zero "no file found"
     if [ -z "$result" ]; then
         echo "==============="
         echo "Matching files:"
@@ -140,7 +142,8 @@ search () {
         echo "============================================"
         ## checks if only one file left of more than one
         if [ $len -eq 1 ]; then
-            ## if only one is left it calls the manipulations function to open or rename or delete file
+            ## if only one is left it calls the manipulations 
+            ## function to open or rename or delete file
             manipulation
         else
             ## if more than one is found it calls the display_filter_options
@@ -163,4 +166,5 @@ find_command="find ./files -iname \"$name*\""
 ## then we search with the file name
 search
 
+## exectues the script again to search for a new file
 ./$file_name
