@@ -1,14 +1,16 @@
-1- reading the input and building the find command by name to serach
-2- then we call the serach function
-3- the search function evaluates the find command
-4- if nothing is found it displays "File not found" and executes the script again toe search for another file
-5- if it found files it displays the found files and type of the found (file or directory)
-6- if only one is left it calls the manipulation function
-7- the manipulation function is called to apply file manipulation
-8- then we go to the end of the file to execute the script again to search for new files
-9- if more than one is left it calls the display filter options again to apply more serac filters
-10- disply_filter_options is called
-11- the display filter options calls options again to store the unvisited filters into selected
-12- and then the serach function to narrow the search result until there is only one left to apply manipulations
-13- we call manipulations to apply manipulations
-14- then we go to the end to ./os.sh to execute the script again to search for a new file
+1- specify the interpreter which is bash
+2- reading the input and building the find command by name to serach
+3- then we call the serach function
+4- the search function is called
+5- the search function evaluates the find command
+6- if nothing is found it displays "File not found" and executes the script again toe search for another file
+7- if it found files it displays the matching files and type of the found (file or directory)
+8- if only one is left it calls the manipulation function
+9- the manipulation function is called to apply file manipulation
+10- then we go to the end of the file to execute the script again to search for new files
+11- if more than one is left it calls the display filter options again to apply more serac filters
+12- disply_filter_options is called
+13- the display filter options calls options again to store the unvisited filters into selected
+14- and then the serach function to narrow the search result until there is only one left to apply manipulations
+15- we call manipulations to apply manipulations
+16- then we go to the end to ./os.sh to execute the script again to search for a new file

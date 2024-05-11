@@ -93,7 +93,9 @@ manipulation() {
                     cat "$result"
                     echo -e "\n------------------------------------------------"
                 else
+                    echo "------------------------------------------------"
                     echo "File is empty or not readable"
+                    echo "------------------------------------------------"
                 fi
             fi
         elif [ "$option" -eq 2 ]; then
@@ -120,6 +122,7 @@ search () {
         echo "Matching files:"
         echo "============================================"
         echo "File not found!"
+        echo "============================================"
 
         ## executing the script again to search for new files
         ./$file_name
