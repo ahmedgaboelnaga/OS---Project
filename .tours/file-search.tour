@@ -10,37 +10,37 @@
     {
       "file": "os.sh",
       "description": "1- The program starts here by reading the input and building the find command by name to serach",
-      "line": 159
+      "line": 163
     },
     {
       "file": "os.sh",
       "description": "2- then we call the serach function",
-      "line": 166
+      "line": 170
     },
     {
       "file": "os.sh",
       "description": "3- the search function is called",
-      "line": 113
-    },
-    {
-      "file": "os.sh",
-      "description": "5- the search function evaluates the find command",
       "line": 115
     },
     {
       "file": "os.sh",
+      "description": "5- the search function evaluates the find command",
+      "line": 117
+    },
+    {
+      "file": "os.sh",
       "description": "6- if nothing is found it displays \"File not found\" and executes the script again toe search for another file",
-      "line": 118
+      "line": 120
     },
     {
       "file": "os.sh",
       "description": "7- if it found files it displays the matching files and type of the found (file or directory)",
-      "line": 126
+      "line": 129
     },
     {
       "file": "os.sh",
       "description": "8- if only one is left it calls the manipulation function",
-      "line": 143
+      "line": 147
     },
     {
       "file": "os.sh",
@@ -50,12 +50,12 @@
     {
       "file": "os.sh",
       "description": "10- then we go to the end of the file to execute the script again to search for new files",
-      "line": 169
+      "line": 173
     },
     {
       "file": "os.sh",
       "description": "11- if more than one is left it calls the display filter options again to apply more serac filters",
-      "line": 148
+      "line": 151
     },
     {
       "file": "os.sh",
@@ -64,18 +64,18 @@
     },
     {
       "file": "os.sh",
-      "description": "13- the display filter options calls options again to store the unvisited filters into selected",
-      "line": 44
+      "description": "13- the display filter options calls options to store the unvisited filters into selected",
+      "line": 52
     },
     {
       "file": "os.sh",
       "description": "14- and then we call the serach function",
-      "line": 151
+      "line": 156
     },
     {
       "file": "os.sh",
       "description": "15- the serach function is called to narrow the search result until there is only one left to apply manipulations",
-      "line": 113
+      "line": 115
     },
     {
       "file": "os.sh",
@@ -85,7 +85,7 @@
     {
       "file": "os.sh",
       "description": "17- then we go to the end to ./os.sh to execute the script again to search for a new file",
-      "line": 169
+      "line": 173
     }
   ],
   "ref": "main"

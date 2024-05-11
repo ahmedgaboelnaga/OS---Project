@@ -17,7 +17,7 @@ display_filter_options () {
     ## checking if the selected value exists
     for selection in ${current_selection[@]}; do
         if [ $selection -gt 4 ] || [ $selection -lt 1 ]; then
-            echo "-------------------------------" 
+            echo "-------------------------------"
             echo "Choose only from the list!"
             display_filter_options
         fi
